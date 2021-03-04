@@ -1,0 +1,6 @@
+framework module Pods_CustomBookReader {
+  umbrella header "Pods-CustomBookReader-umbrella.h"
+
+  export *
+  module * { export * }
+}

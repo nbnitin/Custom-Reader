@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoaderView" customModule="HelloGenius" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="CDK-rL-c17" id="KbY-ac-xF3"/>
+                <outlet property="dotLabel" destination="Nw2-a8-s9B" id="TLQ-f7-PWM"/>
+                <outlet property="imageView" destination="kFK-kB-ONv" id="Db3-Nf-XrC"/>
+                <outlet property="loadingLabel" destination="gmc-gc-5o9" id="0Ou-8z-UmW"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qe6-k6-0Wf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDK-rL-c17">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Loader1" translatesAutoresizingMaskIntoConstraints="NO" id="kFK-kB-ONv">
+                    <rect key="frame" x="40" y="330.66666666666669" width="334" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Ux5-Ew-F5Q"/>
+                        <constraint firstAttribute="height" constant="150" id="tpU-Qe-2hr"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ux5-Ew-F5Q"/>
+                            <exclude reference="tpU-Qe-2hr"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ux5-Ew-F5Q"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Ux5-Ew-F5Q"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ux5-Ew-F5Q"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="tpU-Qe-2hr"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmc-gc-5o9">
+                    <rect key="frame" x="162.33333333333334" y="415.66666666666669" width="89.333333333333343" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54.329999999999998" id="qgy-23-CYo"/>
+                        <constraint firstAttribute="height" constant="23" id="vSh-A3-cBt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nw2-a8-s9B">
+                    <rect key="frame" x="251.66666666666666" y="415.66666666666669" width="54.333333333333343" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="fJe-f6-qGr"/>
+                        <constraint firstAttribute="width" constant="54.329999999999998" id="ppW-40-B6T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CDK-rL-c17" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0wy-5M-Jw6"/>
+                <constraint firstItem="kFK-kB-ONv" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="6gQ-kK-cxu"/>
+                <constraint firstItem="gmc-gc-5o9" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="7E5-l7-qE9"/>
+                <constraint firstAttribute="bottom" secondItem="CDK-rL-c17" secondAttribute="bottom" id="Aby-Li-cZL"/>
+                <constraint firstItem="CDK-rL-c17" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MTL-0T-g6H"/>
+                <constraint firstItem="kFK-kB-ONv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="RIF-86-mT4"/>
+                <constraint firstItem="kFK-kB-ONv" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="dFa-fI-1dx"/>
+                <constraint firstItem="Nw2-a8-s9B" firstAttribute="leading" secondItem="gmc-gc-5o9" secondAttribute="trailing" id="hmS-Tu-zEf"/>
+                <constraint firstItem="Nw2-a8-s9B" firstAttribute="top" secondItem="gmc-gc-5o9" secondAttribute="top" id="iZe-jk-0aL"/>
+                <constraint firstAttribute="trailing" secondItem="CDK-rL-c17" secondAttribute="trailing" id="sVd-t6-Nuy"/>
+                <constraint firstItem="Nw2-a8-s9B" firstAttribute="bottom" secondItem="gmc-gc-5o9" secondAttribute="bottom" id="vHQ-ZV-scd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kFK-kB-ONv" secondAttribute="trailing" constant="50" id="wOt-jI-BPq"/>
+                <constraint firstItem="gmc-gc-5o9" firstAttribute="top" secondItem="kFK-kB-ONv" secondAttribute="bottom" constant="10" id="ypd-7H-dV8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wOt-jI-BPq"/>
+                    <exclude reference="RIF-86-mT4"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="wOt-jI-BPq"/>
+                    <include reference="RIF-86-mT4"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="137.68115942028987" y="119.83695652173914"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Loader1" width="334" height="334"/>
+    </resources>
+</document>
